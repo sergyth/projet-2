@@ -1,0 +1,558 @@
+/* normalize */
+
+@import "normalize.css";
+
+/* reset */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+/* prefabriqués */
+.flex {
+  display: flex;
+}
+.icone {
+  width: 50px;
+  height: 50px;
+}
+
+.btn {
+  height: 50px;
+}
+
+.couleur-primaire {
+  color: #0065fc;
+}
+
+.couleur-secondaire {
+  color: #deebff;
+}
+
+.couleur-grise {
+  color: #f2f2f2;
+}
+
+.couleur-fond {
+  background-color: #f2f2f2;
+}
+
+.bordure-grise {
+  border: 1px solid #f2f2f2;
+}
+
+.bordure-rouge {
+  border: 1px solid red;
+}
+
+.bordure-noire {
+  border: 1px solid black;
+}
+
+.bordure-verte {
+  border: 1px solid green;
+}
+
+.contenu-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenu-autour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenu-entre {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* container */
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  padding: 0 20px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* header */
+
+header {
+  height: 100px;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: 50px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5px;
+}
+
+nav {
+  width: 40%;
+  height: 100%;
+}
+
+nav ul {
+  width: 100%;
+  height: 100%;
+}
+
+nav li {
+  list-style-type: none;
+  height: 100%;
+  border-top: 1px solid transparent;
+  padding: 15px;
+}
+
+nav li:hover {
+  border-top: 1px solid #0065fc;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: #0065fc;
+}
+
+/* main */
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+/* section recherche */
+
+.recherche {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.recherche h1,
+.recherche p,
+.recherche-bouton {
+  margin-bottom: 15px;
+  /* padding: 5px; */
+}
+
+.recherche-bouton .icone {
+  border-radius: 15px 0 0 15px;
+}
+
+.recherche-bouton input {
+  height: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+}
+
+.recherche-bouton .btn {
+  font-weight: bold;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  background-color: #0065fc;
+  border-radius: 0 15px 15px 0;
+  padding: 10px;
+}
+
+.recherche-filtre {
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recherche-filtre h3 {
+  margin-right: 10px;
+}
+
+.recherche-filtre .icone {
+  width: 50px;
+  height: 50px;
+  background-color: #deebff;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-left: -1px;
+}
+
+.recherche-filtre-elements {
+  flex-wrap: wrap;
+}
+
+.recherche-filtre-element {
+  border: 2px solid #deebff;
+  border-radius: 25px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.recherche-filtre-element:hover,
+.recherche-filtre-element:hover > .btn,
+.recherche-filtre-element:hover > .icone {
+  background-color: #0065fc;
+  color: #fff;
+}
+
+.recherche-filtre-element .btn {
+  min-width: 170px;
+  border: none;
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.recherche-info {
+  /* margin-bottom: 10px; */
+  align-items: center;
+}
+
+.recherche-info p {
+  align-items: center;
+}
+
+.recherche-info .icone {
+  border: 2px solid #deebff;
+  width: 25px;
+  height: 25px;
+  border-radius: 13px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+/* section hebergement */
+
+.hebergement {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.hebergement-principal {
+  flex-direction: column;
+  align-items: flex-start;
+  /* width: 65%; */
+  flex: 2;
+  height: auto;
+  margin-right: 15px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.hebergement-principal h2 {
+  padding: 0 22px;
+}
+.hebergement-principal h3,
+.hebergement-principal p,
+.carte-etoile {
+  margin: 0;
+  padding: 5px;
+}
+
+.hebergement-principal-plus {
+  margin-left: 20px;
+  padding: 20px 0 ;
+}
+
+.hebergement-principal-plus a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.carte-container {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid transparent;
+}
+
+.carte {
+  width: 260px;
+  height: 230px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+
+.carte a {
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.carte img {
+  width: 260px;
+  height: 130px;
+  object-fit: cover;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 15px 15px 0 0;
+}
+
+.carte-info {
+  padding: 5px;
+  width: 100%;
+  /* height: 45%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.hebergement-populaire {
+  /* width: 30%; */
+  /* min-width: 350px; */
+  flex: 1;
+  height: auto;
+  margin-left: 15px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.hebergement-populaire-titre {
+  width: 100%;
+  padding: 0 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hebergement-populaire-titre .icone {
+  font-size: 30px;
+}
+
+.container-carte-populaire {
+  width: 80%;
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carte-populaire {
+  width: 100%;
+  height: 140px;
+  background-color: #fff;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 14px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.carte-populaire a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+ 
+}
+
+.carte-populaire img {
+  width: 150px;
+  height: 140px;
+  padding: 5px;
+  object-fit: cover;
+  border: 1px solid transparent;
+  border-radius: 15px 0 0 15px;
+}
+
+/* section activités */
+
+.activites {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.activites h2 {
+  padding: 15px 0;
+}
+
+.activites-bloc-container {
+  padding: 15px 0;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.activites-bloc1,
+  .activites-bloc2,
+  .activites-bloc3,
+  .activites-bloc4 {
+    margin-bottom: 15px;
+  }
+
+.activites-bloc1,
+.activites-bloc3 {
+  width: 280px;
+  height: 510px;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+}
+
+.activites-bloc2,
+.activites-bloc4 {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-activites-bloc1 img,
+.image-activites-bloc3 img {
+  width: 280px;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.activites-bloc2-1,
+.activites-bloc4-2 {
+  width: 280px;
+  height: 260px;
+  border-radius: 15px;
+  border: 1px solid #f2f2f2;
+}
+
+.image-activites-bloc2-1 img,
+.image-activites-bloc4-2 img {
+  width: 280px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.activites-bloc2-2,
+.activites-bloc4-1 {
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+  border: 1px solid #f2f2f2;
+}
+
+.image-activites-bloc2-2 img,
+.image-activites-bloc4-1 img {
+  width: 280px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.activites h3 {
+  padding: 10px;
+  margin: 0;
+}
+
+/* footer */
+
+footer {
+  background-color: #f2f2f2;
+}
+
+.pied-container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pied ul {
+  list-style-type: none;
+  /* flex-direction: column; */
+  padding: 0;
+}
+
+.pied {
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding-right: 200px; */
+  width: 245px;
+  height: 230px;
+}
+
+.pied li {
+  padding: 10px;
+}
+
+.pied h3 {
+  padding: 10px;
+}
+
+.pied-assistance {
+  /* margin-right: 250px; */
+}
+
+/* tablette */
+
+@media screen and (max-width: 992px) {
+  .container {
+  }
+
+  .hebergement {
+    flex-direction: column;
+  }
+  .hebergement-principal {
+    width: 100%;
+  }
+  .hebergement-populaire {
+    width: 100%;
+    margin: 0;
+  }
+
+  
+
+footer{
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+  .pied-container{
+    flex-direction: column;
+    
+  }
+
+  .pied{
+   /* display: inline-block; */
+   margin: auto;
+  }
+  .pied::after{
+    content:'';
+    display: block;
+    width: 245px;
+    height: 3px;
+    background-color: #fff;
+  }
+  
+}
