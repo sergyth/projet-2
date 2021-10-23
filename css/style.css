@@ -11,10 +11,9 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+
 /* prefabriqués */
-.flex {
-  display: flex;
-}
+
 .icone {
   width: 50px;
   height: 50px;
@@ -54,6 +53,10 @@ body {
 
 .bordure-verte {
   border: 1px solid green;
+}
+
+.flex {
+  display: flex;
 }
 
 .contenu-centre {
@@ -151,7 +154,6 @@ main {
 .recherche p,
 .recherche-bouton {
   margin: 20px 0;
-  /* padding: 5px; */
 }
 
 .recherche-bouton .icone {
@@ -165,6 +167,7 @@ main {
   padding: 10px;
   border: 1px solid #f2f2f2;
 }
+
 .recherche-bouton-input {
   position: relative;
 }
@@ -187,7 +190,6 @@ main {
   background-color: #0065fc;
   border-radius: 0 15px 15px 0;
   padding: 10px;
-  /* display: none; */
 }
 
 .recherche-filtre {
@@ -202,7 +204,6 @@ main {
 
 .recherche-filtre-elements {
   flex-wrap: wrap;
- 
 }
 
 .recherche-filtre .icone {
@@ -212,7 +213,6 @@ main {
   border-radius: 25px;
   font-size: 20px;
   margin-left: -3px;
-  
 }
 
 .recherche-filtre-element {
@@ -241,7 +241,6 @@ main {
 }
 
 .recherche-info {
-  /* margin-bottom: 10px; */
   align-items: center;
 }
 
@@ -269,7 +268,7 @@ main {
 .hebergement-principal {
   flex-direction: column;
   align-items: flex-start;
-  /* width: 65%; */
+ 
   flex: 2;
   height: auto;
   margin-right: 15px;
@@ -335,7 +334,6 @@ main {
 .carte-info {
   padding: 5px;
   width: 100%;
-  /* height: 45%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -416,7 +414,7 @@ main {
 .activites-bloc-container {
   padding: 15px 0;
   width: 100%;
-  /* max-width: 992px; */
+
   height: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -427,6 +425,7 @@ main {
   max-width: 32%;
   width: 280px;
 }
+
 .activites-bloc img,
 .activites-bloc1 h3 {
   width: 100%;
@@ -499,14 +498,12 @@ footer {
 
 .pied ul {
   list-style-type: none;
-  /* flex-direction: column; */
   padding: 0;
 }
 
 .pied {
   flex-direction: column;
   align-items: flex-start;
-  /* padding-right: 200px; */
   width: 245px;
   height: 230px;
 }
@@ -526,6 +523,8 @@ footer {
 /* tablette */
 
 @media screen and (max-width: 992px) {
+  /* hebergement */
+
   .hebergement {
     flex-direction: column;
   }
@@ -596,7 +595,6 @@ footer {
 
   .container {
     width: 100%;
-    /* max-width: 768px; */
     min-width: 350px;
     padding: 0;
   }
